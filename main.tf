@@ -1,8 +1,8 @@
 resource "aws_instance" "web1" {
 
   for_each=var.forinstance
-  ami           = "ami-074dc0a6f6c764218"
-  instance_type = "t2.micro"
+  ami           = var.ec2ami
+  instance_type = var.ec2type
 
   tags = {
     Name =each.value["Name"]

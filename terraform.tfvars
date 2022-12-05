@@ -18,3 +18,7 @@ forinstance={
     }
 }
 bucketname=["raghav_bucket-1","raghav_buckettf-2"]
+
+ec2ami="ami-074dc0a6f6c764218"
+
+ec2type="t2.micro"
