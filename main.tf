@@ -18,8 +18,8 @@ resource"aws_s3_bucket" "buckets3"{
     # acl="private"   
     #region="ap-south-1"
     tags = {
-      Owner="raghav"
-      Purpose ="training"
+      Owner=var.s3_tag["owner"]
+      Purpose =var.s3_tag["purpose"]
   
   }
 }        

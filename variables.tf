@@ -10,3 +10,6 @@ variable "ec2ami"{
 variable "ec2type"{
     type=list(string)
 }
+variable "s3_tag"{
+    type =map(any)
+}
